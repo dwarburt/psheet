@@ -14,6 +14,7 @@ then
 
     git config user.email "buildbot@wbtn.net"
     git config user.name "Build bot"
+    git reset --hard
     git checkout gh-pages
     rm -rf *
     cp -r /tmp/site/* .
