@@ -18,6 +18,7 @@ then
     git checkout gh-pages
     rm -rf *
     cp -r /tmp/site/* .
+    touch .nojekyll
     git add .
     git commit -m "deploy site"
     git push
