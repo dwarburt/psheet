@@ -7,7 +7,7 @@ then
 
     npm install -g @angular/cli
     cd psheet-app
-    #npm install
+    npm install
     mkdir -p /tmp/site
     ng build --prod --output-path /tmp/site --base-href /psheet/
     cd ..
