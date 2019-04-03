@@ -1,4 +1,6 @@
-#!/bin/bash -evx
+#!/bin/bash
+
+set -evx
 
 install -g @angular/cli
 cd psheet-app
