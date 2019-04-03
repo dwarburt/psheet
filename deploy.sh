@@ -1,8 +1,8 @@
 #!/bin/bash
 
-set -evx
+set -ex
 echo "Working on $GITHUB_REF"
-if [[ "master" = "$GITHUB_REF" ]]
+if [[ "refs/heads/master" = "$GITHUB_REF" ]]
 then
 
     npm install -g @angular/cli
