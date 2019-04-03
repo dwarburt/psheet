@@ -1,7 +1,8 @@
-#!/bin/bash
-set -e
+#!/bin/bash -evx
+
 install -g @angular/cli
 cd psheet-app
+npm install
 mkdir -p /tmp/site
 ng build --prod --output-path /tmp/site --base-href /psheet/
 cd ..
