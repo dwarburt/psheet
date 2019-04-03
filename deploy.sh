@@ -2,7 +2,7 @@
 
 set -evx
 
-install -g @angular/cli
+npm install -g @angular/cli
 cd psheet-app
 npm install
 mkdir -p /tmp/site

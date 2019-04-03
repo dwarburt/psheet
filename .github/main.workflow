@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "publish site workflow" {
   on = "push"
   resolves = ["GitHub Action for npm"]
 }
