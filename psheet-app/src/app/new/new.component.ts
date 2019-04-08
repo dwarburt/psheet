@@ -17,7 +17,7 @@ export class NewComponent implements OnInit {
   ngOnInit() {
   }
   add(name: string) : void {
-    this.heroService.saveHero( { name } as Hero );
+    this.heroService.save( { name } as Hero );
     this.router.navigate(["/heroes"]);
   }
 }

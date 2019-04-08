@@ -6,4 +6,10 @@
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </label>
   </div>
+  <div>
+    <button (click)="heroService.save(hero)">Save</button>
+  </div>
+  <div>
+    <button (click)="nuke(hero)">Delete</button>
+  </div>
 </div>
