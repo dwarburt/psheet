@@ -5,6 +5,9 @@
     <label>name:
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </label>
+    <div>
+      <app-table-picker [hero]="hero" table="Folk"></app-table-picker>
+    </div>
   </div>
   <div>
     <button (click)="heroService.save(hero)">Save</button>

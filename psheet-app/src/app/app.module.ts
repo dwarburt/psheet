@@ -9,6 +9,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewComponent } from './new/new.component';
+import { TablePickerComponent } from './table-picker/table-picker.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewComponent } from './new/new.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    NewComponent
+    NewComponent,
+    TablePickerComponent
   ],
   imports: [
     BrowserModule,
