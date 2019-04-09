@@ -6,17 +6,14 @@ export class Table {
         //identify die size
         this.dieSize = 0;
         rows.forEach(r => {
-            console.log("begin accumulation");
-
-            this.dieSize = Math.max(this.dieSize, ...r.roll);
-            console.log("Self.diesize increased to " + this.dieSize);
+            this.dieSize = Math.max(this.dieSize, r.roll);
         });
     }
     roll(): Row  {
         let result:number = Math.floor(Math.random() * this.dieSize) + 1;
         let resultValue: Row = null;
         this.rows.forEach(r => {
-            if (result >= r.roll[0] && result <= r.roll[1]) {
+            if (result <= r.roll) {
                 resultValue = r;
             }
         });
@@ -24,6 +21,6 @@ export class Table {
     }
 }
 export class Row {
-    constructor(public roll: Array<number>, public value: string, public detail: string)
+    constructor(public roll: number, public value: string, public detail: string)
     { }
 }
