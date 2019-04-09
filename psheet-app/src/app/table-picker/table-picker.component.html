@@ -1,5 +1,5 @@
 <div *ngIf="hero">
 <span>
-  {{this.table}}: {{value()}}
+  {{this.table}}: {{this.heroValue}} <button (click)="this.choose()">Roll for {{this.table}}</button>
 </span>
 </div>
