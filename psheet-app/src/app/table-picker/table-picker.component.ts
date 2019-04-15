@@ -29,11 +29,13 @@ export class TablePickerComponent implements OnInit {
   }
   
   choose(): void {
+    console.log("choosing");
     var tableData: Table = TableList[this.table];
     var result = tableData.roll();
     this.heroValue = result.value;
     this.hero[this.table] = this.heroValue;
     this.heroService.save(this.hero);
+    console.log(`Chose ${result.value}`)
   }
 
 }

@@ -8,6 +8,9 @@
     <div>
       <app-table-picker [hero]="hero" table="Folk"></app-table-picker>
     </div>
+    <div *ngIf="hero.Folk == 'Human'">
+      COHORT PICKER
+    </div>
   </div>
   <div>
     <button (click)="heroService.save(hero)">Save</button>

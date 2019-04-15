@@ -12,9 +12,10 @@ export class Table {
     roll(): Row  {
         let result:number = Math.floor(Math.random() * this.dieSize) + 1;
         let resultValue: Row = null;
-        this.rows.forEach(r => {
+        this.rows.some(r => {
             if (result <= r.roll) {
                 resultValue = r;
+                return true;
             }
         });
         return resultValue;
